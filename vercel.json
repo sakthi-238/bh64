@@ -5,6 +5,14 @@
     }
   },
   "routes": [
-    { "src": "/(.*)",  "dest": "/api/index.php","src1": "/api/index.php", "dest1": "/results.php" }
+    { 
+      "src": "/(.*)", 
+      "dest": "/api/index.php" 
+
+    },
+    {
+      "src": "/api/index.php",
+      "dest": "/api/results.php"
+  }
   ]
 }
